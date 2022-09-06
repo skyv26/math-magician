@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Project Name
 
 > Math Magician is the intermediate project for learning React.js in a fun and interactive way. This project will be update time to time by adding the features step by step. We will see Mathematics related utilities like Calculator and some tricks or magic in upcoming few weeks.
