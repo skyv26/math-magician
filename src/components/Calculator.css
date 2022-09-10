@@ -32,7 +32,6 @@
 }
 
 .button {
-  display: grid;
   height: 4.25rem;
   font-size: 1.6rem;
   display: inline-block;
