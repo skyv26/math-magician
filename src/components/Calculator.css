@@ -10,17 +10,46 @@
 
 .display {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  color: white;
+  width: 20rem;
   background-color: rgb(46, 45, 45);
   height: 5rem;
-  color: white;
-  align-items: center;
-  justify-content: right;
+  justify-content: center;
   text-align: right;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-color: #8f54a0 transparent;
+}
+
+.display::-webkit-scrollbar {
+  width: 1px;
+  height: 0;
+}
+
+.display::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.display::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 1px;
+  border: 1px solid transparent;
+}
+
+.history,
+.calculation {
+  width: 100%;
+  padding: 0.4rem 0.4rem;
+  justify-self: center;
+  vertical-align: middle;
+}
+
+.history {
+  border-bottom: thin solid gray;
 }
 
 .calculation {
-  padding-right: 0.75rem;
   font-size: 1.6rem;
 }
 
