@@ -65,7 +65,9 @@ class Calculator extends Component {
       isEqual,
       total,
     } = this.state;
+
     let calculation = '';
+
     if (isEqual) {
       calculation = total;
     } else if (txtString.length) {
@@ -73,6 +75,9 @@ class Calculator extends Component {
     } else {
       calculation = '0';
     }
+
+    // const jsxString =
+
     return (
       <div className="calculator">
         <div className="display">
@@ -80,9 +85,18 @@ class Calculator extends Component {
         </div>
         <div className="keypad">
           {
-            // eslint-disable-next-line react/no-array-index-key
-            this.keysArray.map((each, index) => (<button key={index} type="button" className={`button ${each === '0' ? 'zero-btn' : ''} ${['+', '-', 'x', '÷', '='].includes(each) ? 'operation-btn' : ''}`.trim()} onClick={(e) => { this.buttonClickHandler(e); }}>{each}</button>))
-          }
+            this.keysArray.map((each, index) => (
+              <button
+                // eslint-disable-next-line react/no-array-index-key
+                key={index}
+                type="button"
+                className={`button ${each === '0' ? 'zero-btn' : ''} ${['+', '-', 'x', '÷', '='].includes(each) ? 'operation-btn' : ''}`}
+                onClick={(e) => this.buttonClickHandler(e)}
+              >
+                {each}
+              </button>
+            ))
+        }
         </div>
       </div>
     );
