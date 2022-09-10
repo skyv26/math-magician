@@ -76,8 +76,6 @@ class Calculator extends Component {
       calculation = '0';
     }
 
-    // const jsxString =
-
     return (
       <div className="calculator">
         <div className="display">
