@@ -16,21 +16,67 @@ class Calculator extends Component {
       total: null,
       next: null,
       operation: null,
+      txtString: '',
+      isEqual: false,
     };
     this.buttonClickHandler = this.buttonClickHandler.bind(this);
   }
 
   buttonClickHandler = (e) => {
-    const { textContent } = e.target;
-    console.log(calculate(this.state, textContent));
+    const { target } = e;
+    const { textContent } = target;
+    let { txtString, isEqual } = this.state;
+    const resultant = calculate(this.state, textContent);
+    if (textContent !== '=') {
+      if (textContent !== '+/-') {
+        txtString += textContent;
+      } else {
+        txtString = resultant.total;
+      }
+      isEqual = false;
+    } else {
+      isEqual = true;
+      if (resultant.total) {
+        txtString = resultant.total;
+      }
+    }
+
+    if (textContent === 'AC') {
+      this.setState({
+        total: null,
+        next: null,
+        operation: null,
+        isEqual: false,
+        txtString: '',
+      });
+    } else {
+      this.setState((prevState) => ({
+        ...prevState,
+        ...resultant,
+        txtString,
+        isEqual,
+      }));
+    }
   }
 
   render() {
-    const { total } = this.state;
+    const {
+      txtString,
+      isEqual,
+      total,
+    } = this.state;
+    let calculation = '';
+    if (isEqual) {
+      calculation = total;
+    } else if (txtString.length) {
+      calculation += txtString;
+    } else {
+      calculation = '0';
+    }
     return (
       <div className="calculator">
         <div className="display">
-          <p className="calculation">{total ?? 0}</p>
+          <p className="calculation">{calculation}</p>
         </div>
         <div className="keypad">
           {
