@@ -19,7 +19,6 @@
   text-align: right;
   overflow-y: hidden;
   overflow-x: scroll;
-  scrollbar-width: 1px;
   scrollbar-color: #8f54a0 transparent;
 }
 
@@ -38,7 +37,8 @@
   border: 1px solid transparent;
 }
 
-.history, .calculation {
+.history,
+.calculation {
   width: 100%;
   padding: 0.4rem 0.4rem;
   justify-self: center;
