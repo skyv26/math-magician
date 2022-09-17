@@ -1,6 +1,12 @@
 import React from 'react';
 import Calculator from './components/Calculator';
+import Header from './components/Header';
 
-const App = () => <Calculator />;
+const App = () => (
+  <>
+    <Header />
+    <Calculator />
+  </>
+);
 
 export default App;
