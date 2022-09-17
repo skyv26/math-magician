@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => (
   <section className="section section-home">
@@ -7,8 +8,20 @@ const Home = () => (
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
       modi accusamus. Nostrum autem et labore eveniet tempora voluptatem,
       eligendi aliquam, fugit ipsum nisi accusamus, itaque architecto nemo omnis nobis distinctio?
-    </p>
-    <p className="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+      modi accusamus. Nostrum autem et labore eveniet tempora voluptatem,
+      eligendi aliquam, fugit ipsum nisi accusamus, itaque architecto nemo omnis nobis distinctio?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+      modi accusamus. Nostrum autem et labore eveniet tempora voluptatem,
+      eligendi aliquam, fugit ipsum nisi accusamus, itaque architecto nemo omnis nobis distinctio?
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+      modi accusamus. Nostrum autem et labore eveniet tempora voluptatem,
+      eligendi aliquam, fugit ipsum nisi accusamus, itaque architecto nemo omnis nobis distinctio?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+      modi accusamus. Nostrum autem et labore eveniet tempora voluptatem,
+      eligendi aliquam, fugit ipsum nisi accusamus, itaque architecto nemo omnis nobis distinctio?
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
       modi accusamus. Nostrum autem et labore eveniet tempora voluptatem,
       eligendi aliquam, fugit ipsum nisi accusamus, itaque architecto nemo omnis nobis distinctio?
