@@ -27,7 +27,12 @@
   border-radius: 0.6rem;
 }
 
-.list.active {
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
   background-color: rgb(220, 20, 177);
 }
 
