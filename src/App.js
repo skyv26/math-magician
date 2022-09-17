@@ -9,10 +9,10 @@ const App = () => (
   <>
     <Header />
     <Routes>
-      <Route path="/" render={() => <Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/calculator" element={<App />} />
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/calculator" element={<App />} /> */}
       <Route path="/quote" element={<Quote />} />
+      <Route path="/home" render={() => <Navigate to="/" />} />
     </Routes>
     {/* <Calculator /> */}
   </>
