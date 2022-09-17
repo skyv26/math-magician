@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.desc {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,10 @@
+.section-quote {
+  display: grid;
+  place-items: center;
+  height: 25rem;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+}

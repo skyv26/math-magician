@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.list {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.6rem;
+}
+
+.active {
+  background-color: rgb(220, 20, 177);
+}
