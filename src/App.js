@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 // import Calculator from './components/Calculator';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
@@ -9,6 +9,7 @@ const App = () => (
   <>
     <Header />
     <Routes>
+      <Route path="/" render={() => <Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
       <Route path="/calculator" element={<App />} />
       <Route path="/quote" element={<Quote />} />
