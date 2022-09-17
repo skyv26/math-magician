@@ -11,7 +11,7 @@
 
 ## Live Demo (if available)
 
-[coming soon ... 🎈]()
+[click here 🚀](https://math-magician-skyv.netlify.app/)
 
 
 ## Getting Started
