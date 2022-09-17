@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+}
+
+.list {
+  border: 0.2rem solid black;
+}
