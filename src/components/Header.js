@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Header = () => (
-  <header>
-    <h1>Math Magicians</h1>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Calculator</li>
-        <li>Quote</li>
+  <header className="header">
+    <h1 className="logo">Math Magicians</h1>
+    <nav className="navigation">
+      <ul className="ul">
+        <li className="list">Home</li>
+        <li className="list">Calculator</li>
+        <li className="list">Quote</li>
       </ul>
     </nav>
   </header>
