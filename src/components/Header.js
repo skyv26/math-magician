@@ -8,7 +8,7 @@ const Header = () => (
     <nav className="navigation">
       <ul className="ul">
         <li className="list">
-          <NavLink to="/home" className={({ isActive }) => `link ${(isActive ? 'active' : '')}`}>Home</NavLink>
+          <NavLink to="/" className={({ isActive }) => `link ${(isActive ? 'active' : '')}`} end>Home</NavLink>
         </li>
         <li className="list">
           <NavLink to="/calculator" className={({ isActive }) => `link ${(isActive ? 'active' : '')}`}>Calculator</NavLink>
