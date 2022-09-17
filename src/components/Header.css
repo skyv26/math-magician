@@ -17,23 +17,22 @@
 .ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 0.6rem;
+  padding: 0.2rem 0.6rem;
 }
 
 .list {
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.2rem 1rem;
-  border-radius: 0.6rem;
 }
 
 .link {
   text-decoration: none;
   color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.6rem;
 }
 
 .active {
   background-color: rgb(220, 20, 177);
 }
-
-
