@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
 .logo {
@@ -15,8 +17,18 @@
 .ul {
   list-style: none;
   display: flex;
+  gap: 1rem;
 }
 
 .list {
-  border: 0.2rem solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 1rem;
+  border-radius: 0.6rem;
 }
+
+.list.active {
+  background-color: rgb(220, 20, 177);
+}
+
+
